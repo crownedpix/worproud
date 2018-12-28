@@ -1,0 +1,73 @@
+profile-page {
+  .profile-image-wrapper {
+    text-align: center;
+    margin: 20px 0;
+    .profile-image {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      border: 5px solid map_get($colors,logo_border);
+    }
+    .profile-image-placeholder {
+      display: inline-block;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image:  url("../../assets/img/advance-card-tmntr.jpg");
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      font-size: 12px;
+      border: 5px solid map_get($colors,logo_border);
+      ion-icon {
+        font-size: 44px;
+        margin-bottom: -10px;
+        margin-top: 22px;
+      }
+    }
+  }
+  .amount{
+    color:  map_get($colors,theme_color);
+    background: white;
+  }
+  .userDetails{
+    color: white;
+    text-align: center;
+    font-family: "sans-serif";
+    font-weight: bold;
+    font-size: 1.6rem !important;
+    margin-bottom: 6%;
+  }
+  .full_name{
+    opacity: 0.8;
+    color: white;
+    text-align: center;
+    font-family: "sans-serif";
+    font-size: 1.7rem !important;
+    margin-bottom: -6px !important;
+  }
+  .upperDiv{
+    background:  map_get($colors,theme_color);
+  }
+  .item-block{
+    border: none;
+  }
+  .label_here{
+   color: black !important;
+    font-size: 16px !important;
+  }
+  ion-input{
+    font-size: 16px !important;
+  }
+  .list-md {
+    margin: 15px 0 16px;
+  }
+  .toolbar-background {
+    background-color:  map_get($colors,theme_color) !important;
+  }
+
+}

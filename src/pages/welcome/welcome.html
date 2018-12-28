@@ -1,0 +1,49 @@
+<ion-content scroll="false">
+  <div class="fixed-content">
+    <div class="logoHeader">
+      <img alt="logo" height="60" style="position: relative" src="../assets/img/icon-512x512.png">
+    </div>
+    <h1 class="welcomeHeader" (click)="logoClick(1)">WORPROUD</h1>
+    <div style="height: 10%; color:#fff">
+<!-- {{clickCount}} {{clickTwo}}  {{clickThree}} -->
+    </div>
+    <!-- <form *ngIf="form" [formGroup]="form" (ngSubmit)="signIn()"> -->
+      <div padding>
+        <!-- <ion-input type="email"  [(ngModel)]="account.email" class="input-access-code" placeholder="Email" formControlName="user_name"></ion-input>
+        <br>
+        <ion-input type="password" [(ngModel)]="account.password" class="input-access-code" placeholder="Password" formControlName="user_pass"></ion-input>
+        <br> -->
+        <button ion-button block class="login" (click)="signIn()">{{ 'CONTINUE'}}</button>
+        <!-- <p style="text-align:center;color:  #1ABC9C;">-or-</p>
+        <a href="/#/users_lists">
+          <button ion-button block class="signup" style="padding: 21px !important; background: black!important;">{{
+            'FACEBOOK' |
+            translate }}
+          </button>
+        </a> -->
+        <!-- <div class="create_account">
+          <a href="/#/signup">Create Account</a>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+        </div> -->
+      </div>
+      <ion-row style="color:#fff; text-align:center; padding-top:10px; font-size:22px" row>
+        <ion-icon col-4 name="md-barcode"></ion-icon>
+        <ion-icon col-4 name="md-aperture" (click)="logoClickZ()"></ion-icon>
+        <ion-icon col-4 name="md-book"></ion-icon>
+      </ion-row>
+      <div padding>
+          <button ion-button block class="loginB" *ngIf="showSecter" (click)="logoClick(3)"></button>
+      </div>
+    <!-- </form> -->
+  </div>
+
+
+
+</ion-content>
+<ion-footer>
+
+<ion-row style="color:#77c6fe; text-align:center; font-size:28px" row >
+<ion-icon col-4 name="md-arrow-dropleft"></ion-icon>
+<ion-icon col-4 name="md-arrow-dropup" (click)="logoClick(3)"></ion-icon>
+<ion-icon col-4 name="md-arrow-dropright"></ion-icon>
+</ion-row>
+</ion-footer>

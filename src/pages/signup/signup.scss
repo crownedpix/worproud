@@ -1,0 +1,24 @@
+page-signup {
+
+  .toolbar-background {
+    background-color:#696969 !important;
+  }
+
+  .signUpBtn{
+   background: #696969 !important;
+ }
+ .content-md {
+   background-color: black !important;
+   background: url('../assets/img/news_bg.png') no-repeat;
+   background-size: cover;
+ }
+ ion-card-header, ion-card-content{
+   background: #000000;
+   color:#cccccc !important;
+ }
+
+ .item-md{
+   background: rgba(0,0,0,0);
+   color: #ffffff;
+ }
+}

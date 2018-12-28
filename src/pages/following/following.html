@@ -1,0 +1,35 @@
+
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-buttons left>
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>{{ 'Following' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content>
+  <ion-list>
+    <ion-item-sliding class="cssForRoundSLidingItems" *ngFor="let item of currentItems" #slidingItem>
+      <ion-item>
+        <ion-avatar item-start>
+          <img [src]="item.profilePic">
+        </ion-avatar>
+        <h2>{{item.name}}</h2>
+        <p>{{item.about}}</p>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button  color="dark" icon-start (click)="unfollowSomeOne(item,slidingItem)">
+          <!--<ion-icon ios="ios-return-left" md="md-return-left"></ion-icon>-->
+          <ion-avatar item-start>
+            <img class="followings" src ="../../assets/img/users/followers.png">
+          </ion-avatar>
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>
