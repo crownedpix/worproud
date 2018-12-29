@@ -1,12 +1,10 @@
 
 <ion-header>
   <ion-navbar color="primary">
-    <ion-buttons left>
-      <button ion-button icon-only menuToggle>
-        <ion-icon name="menu"></ion-icon>
-      </button>
+    <ion-buttons right>
+
     </ion-buttons>
-    <ion-title>{{ 'Following' | translate }}</ion-title>
+    <ion-title>Poses {{leftItems}}/355 </ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -19,6 +17,7 @@
     <ion-option value="incomplete">Incomplete</ion-option>
   </ion-select>
   <ion-list>
+
     <ion-card class="card" *ngFor="let item of currentItems">
         <div class="iconMaze">
           <span class="pull-left" (click)="likePost(item)"   [ngClass]="(item.favorite == true) ? 'active' : 'inactive'">
