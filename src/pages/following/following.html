@@ -4,7 +4,7 @@
     <ion-buttons right>
 
     </ion-buttons>
-    <ion-title>Poses {{leftItems}}/355 </ion-title>
+    <ion-title>Poses {{leftItems}}/364 </ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -18,7 +18,7 @@
   </ion-select>
   <ion-list>
 
-    <ion-card class="card" *ngFor="let item of currentItems">
+    <ion-card class="card" *ngFor="let item of currentItems" [ngClass]="(item.completed == true) ? 'active' : 'inactive'">
         <div class="iconMaze">
           <span class="pull-left" (click)="likePost(item)"   [ngClass]="(item.favorite == true) ? 'active' : 'inactive'">
             <ion-icon name="heart"></ion-icon>

@@ -63,6 +63,7 @@ const personRef: firebase.database.Reference = firebase.database().ref('/pos');
   }
 
   snapshotToArray(snapshot) {
+     this.leftItems = 0;
      var o = this;
      var returnArr = [];
      var sortArr = [];
