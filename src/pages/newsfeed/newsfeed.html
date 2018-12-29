@@ -1,0 +1,50 @@
+
+<ion-header>
+  <ion-navbar color="primary">
+
+    <ion-title>{{ 'News Feed' | translate }}</ion-title>
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+  <ion-card *ngFor="let item of cardItems">
+
+    <!-- <ion-item>
+      <ion-avatar item-start>
+        <img [src]="item.user_avtar">
+      </ion-avatar>
+      <h2>{{item.user_name}}</h2>
+      <p>{{item.date}}</p>
+    </ion-item> -->
+    <a (click)="urlClick(item.url)">
+      <img *ngIf="item.urlToImage" [src]="item.urlToImage">
+    </a>
+    <ion-card-content>
+      <h2 (click)="urlClick(item.url)">{{item.title}}</h2>
+      <p>{{item.content}}</p>
+    </ion-card-content>
+
+    <!-- <ion-row>
+      <ion-col>
+        <button ion-button color="primary" clear small icon-start>
+          <ion-icon name='thumbs-up'></ion-icon>
+          {{likes}} Likes
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button color="primary" clear small icon-start>
+          <ion-icon name='text'></ion-icon>
+          4 Comments
+        </button>
+      </ion-col>
+      <ion-col center text-center>
+        <ion-note>
+          11h ago
+        </ion-note>
+      </ion-col>
+    </ion-row> -->
+  </ion-card>
+</ion-content>

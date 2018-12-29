@@ -1,0 +1,43 @@
+
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-buttons left>
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>{{ 'Following' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-select name="exp">
+    <ion-option value="all">All</ion-option>
+    <ion-option value="completed">Completed</ion-option>
+    <ion-option value="favorite">Favorite</ion-option>
+    <ion-option value="incomplete">Incomplete</ion-option>
+  </ion-select>
+  <ion-list>
+    <ion-card class="card" *ngFor="let item of currentItems">
+        <div class="iconMaze">
+          <span class="pull-left" (click)="likePost(item)"   [ngClass]="(item.favorite == true) ? 'active' : 'inactive'">
+            <ion-icon name="heart"></ion-icon>
+          </span>
+          <span class="pull-right" (click)="compPost(item)"  [ngClass]="(item.completed == true) ? 'active' : 'inactive'">
+            <ion-icon name="ribbon"></ion-icon>
+          </span>
+        </div>
+        <ion-card-content>
+        <img [src]="ImgGale(item.photoVal)">
+        </ion-card-content>
+    </ion-card>
+    <!-- <ion-item-sliding class="cssForRoundSLidingItems" *ngFor="let item of currentItems" #slidingItem>
+      <ion-item>
+        <ion-avatar item-start>
+
+        </ion-avatar>
+      </ion-item>
+    </ion-item-sliding> -->
+  </ion-list>
+</ion-content>

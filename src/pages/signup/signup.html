@@ -1,0 +1,97 @@
+<!-- <ion-header>
+  <ion-navbar color="primary">
+    <ion-buttons left>
+      <button ion-button icon-only (click)="welcomePage()">
+        <ion-icon ios="ios-arrow-round-back" md="md-arrow-round-back"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>{{ 'Sign up' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header> -->
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Memoir</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <form (submit)="doRecord()">
+    <ion-list>
+      <ion-item>
+        <ion-label>Date</ion-label>
+        <ion-datetime displayFormat="DD/MM/YYYY" name="time" [(ngModel)]="dataA.myDate"></ion-datetime>
+      </ion-item>
+      <ion-item>
+        <ion-label>Type</ion-label>
+        <ion-select multiple="true" name="type"  okText="Okay" cancelText="Dismiss" [(ngModel)]="dataA.type">
+          <ion-option value="NSRM">0 NSRM</ion-option>
+          <ion-option value="SRM">1 SRM</ion-option>
+          <ion-option value="SAS">2 SAS</ion-option>
+          <ion-option value="WLD">3 WLD</ion-option>
+          <ion-option value="FRC">4 FRC</ion-option>
+          <ion-option value="ORL">5 ORL</ion-option>
+          <ion-option value="DLDO">6 DLD</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label>Hours</ion-label>
+        <ion-select [(ngModel)]="dataA.hrs" name="hrs">
+          <ion-option value="0.1">Minutes</ion-option>
+          <ion-option value="0.5">Half an Hour</ion-option>
+          <ion-option value="1">1</ion-option>
+          <ion-option value="2">2</ion-option>
+          <ion-option value="3">3</ion-option>
+          <ion-option value="4">4</ion-option>
+          <ion-option value="4+">4</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label>Time of Day</ion-label>
+        <ion-select [(ngModel)]="dataA.dayType" name="dayType">
+          <ion-option value="Early morning">Early morning</ion-option>
+          <ion-option value="Morning">Morning</ion-option>
+          <ion-option value="Noon">Noon</ion-option>
+          <ion-option value="Afternoon">Afternoon</ion-option>
+          <ion-option value="Evening">Evening</ion-option>
+          <ion-option value="Night">Night</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label>Exp</ion-label>
+        <ion-select [(ngModel)]="dataA.exp" name="exp">
+          <ion-option value="Below Average">Less 1</ion-option>
+          <ion-option value="Average">1</ion-option>
+          <ion-option value="Good">2</ion-option>
+          <ion-option value="Wonderfull">3</ion-option>
+          <ion-option value="Gorgeous">4</ion-option>
+        </ion-select>
+      </ion-item>
+      <div padding>
+        <button ion-button class="signUpBtn" block>Add</button>
+      </div>
+    </ion-list>
+  </form>
+
+
+
+<div>
+
+  <div padding>
+    <button ion-button (click)="PosedGIrl()" class="signUpBtn" block>POSES STATUS</button>
+    <!-- <button ion-button (click)="safeday()"  class="signUpBtn" block>SAFE DAYS</button> -->
+  </div>
+  <ion-list>
+    <ion-card *ngFor="let song of girls">
+        <ion-card-header>
+        {{song.Date}}
+        </ion-card-header>
+        <ion-card-content>
+        On {{song.Day}} we did for {{song.Hours}} hrs. It was {{song.Experience}}
+        <br>
+        It was {{ calcu(song.Type)}}
+        </ion-card-content>
+    </ion-card>
+  </ion-list>
+</div>
+
+</ion-content>
