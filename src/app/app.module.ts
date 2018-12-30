@@ -26,12 +26,12 @@ import { Vibration } from '@ionic-native/vibration';
 
 import {UsersPageModule} from "../pages/users_lists/users_lists.module";
 export const firebaseConfig = {
-  apiKey: "AIzaSyDxIVR56nvBb5jcPQXyfIimM7ZvbkgPK1M",
-    authDomain: "worproudzaan.firebaseapp.com",
-    databaseURL: "https://worproudzaan.firebaseio.com",
-    projectId: "worproudzaan",
-    storageBucket: "",
-    messagingSenderId: "531656486301"
+  apiKey: "AIzaSyBHoNNK4ezKWebi4E10TGB6TKVBphIDefI",
+    authDomain: "worp-9efd8.firebaseapp.com",
+    databaseURL: "https://worp-9efd8.firebaseio.com",
+    projectId: "worp-9efd8",
+    storageBucket: "worp-9efd8.appspot.com",
+    messagingSenderId: "475290793422"
 };
 // The translate loader needs to know where to load i18n files
 // in Ionic's static asset pipeline.

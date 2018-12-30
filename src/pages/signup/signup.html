@@ -75,9 +75,22 @@
 
 
 <div>
+    <form (submit)="waitEmergency()">
+      <ion-list>
+        <ion-item>
+          <ion-label color="primary" floating> MESSAGE </ion-label>
+          <ion-input [(ngModel)]="waitMins" name="waitMins"></ion-input>
+          </ion-item>
+          <ion-item>
+            <button ion-button class="signUpBtn" block>POSES STATUS</button>
+            </ion-item>
+      </ion-list>
+      </form>
 
   <div padding>
     <button ion-button (click)="PosedGIrl()" class="signUpBtn" block>POSES STATUS</button>
+    <button ion-button (click)="emergency()" class="signUpBtn" block>Emergency</button>
+    <button ion-button (click)="veryEmergency()" class="signUpBtn" block>High Emergency</button>
     <!-- <button ion-button (click)="safeday()"  class="signUpBtn" block>SAFE DAYS</button> -->
   </div>
   <ion-list>

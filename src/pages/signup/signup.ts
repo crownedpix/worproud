@@ -83,7 +83,7 @@ export class SignupPage {
     });
     returnArr.reverse();
     for(var i = 0; i <= returnArr.length; i++){
-      if(i <= 5)
+      if(i <= 1)
       sortArr.push(returnArr[i]);
     }
     return sortArr;
