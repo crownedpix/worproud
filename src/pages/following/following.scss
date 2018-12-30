@@ -1,4 +1,10 @@
 following {
+  .card.active{
+    background: #f08585;
+  }
+  .toolbar-background{
+    background-color: #696969 !important;
+  }
   // img{
   //   border-radius: 50% !important;
   //   overflow: hidden !important;
@@ -39,9 +45,7 @@ following {
   h2 {
     color:  map_get($colors,theme_color) !important;
   }
-  .toolbar-background {
-    background-color:  map_get($colors,theme_color) !important;
-  }
+  
   .card{
     position: relative;
   }
