@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "531656486301",
-    "firebase_url": "https://worproudzaan.firebaseio.com",
-    "project_id": "worproudzaan",
-    "storage_bucket": "worproudzaan.appspot.com"
+    "project_number": "475290793422",
+    "firebase_url": "https://worp-9efd8.firebaseio.com",
+    "project_id": "worp-9efd8",
+    "storage_bucket": "worp-9efd8.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:531656486301:android:6e1317fbf90387cf",
+        "mobilesdk_app_id": "1:475290793422:android:6e1317fbf90387cf",
         "android_client_info": {
           "package_name": "com.crownedpix.worproud"
         }
       },
       "oauth_client": [
         {
-          "client_id": "531656486301-jf7psv6vik5mnvkv99knbaiar84g4bf1.apps.googleusercontent.com",
+          "client_id": "475290793422-l64aeb5g19nsab5sal0cpnaankjp4ben.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBvyfe-8YEsAfm9zNigaUh7EQjAyQPolnI"
+          "current_key": "AIzaSyCIgE-L_qi_j-hnUbppylp0K8M3Jm0_iLY"
         }
       ],
       "services": {
