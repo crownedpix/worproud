@@ -4,6 +4,7 @@ following {
   }
   .toolbar-background{
     background-color: #696969 !important;
+    color: #fff;
   }
   // img{
   //   border-radius: 50% !important;
@@ -45,7 +46,7 @@ following {
   h2 {
     color:  map_get($colors,theme_color) !important;
   }
-  
+
   .card{
     position: relative;
   }

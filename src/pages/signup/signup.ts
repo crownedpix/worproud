@@ -56,7 +56,18 @@ export class SignupPage {
     this.nEmer = this.afDB.list('/NEmergency');
     this.wEmer = this.afDB.list('/WEmergency');
     this.mPartner = this.afDB.list('/boy');
+    this.pos = this.afDB.list('/pos');
 
+    // for(var z = 1; z <= this.len; z++){
+    //   const sRef = this.pos.push({});
+    //   sRef.set({
+    //     id: sRef.key,
+    //   completed: false,
+    //   difficulty:0,
+    //   favorite:false,
+    //   photoVal: "pe (" + z  + ").jpg"
+    //   });
+    // }
 
 
 
@@ -83,7 +94,7 @@ export class SignupPage {
     });
     returnArr.reverse();
     for(var i = 0; i <= returnArr.length; i++){
-      if(i <= 1)
+      if(i <= 5)
       sortArr.push(returnArr[i]);
     }
     return sortArr;
