@@ -92,7 +92,7 @@ export class MyApp {
       // this.statusBar.styleDefault();
       this.splashScreen.hide();
       this.statusBar.overlaysWebView(false);
-      this.statusBar.backgroundColorByHexString('#1ABC9C');
+      this.statusBar.backgroundColorByHexString('#222323');
 
       this.fcm.subscribeToTopic('marketing');
       // TO notify about

@@ -40,7 +40,7 @@ export class SignupPage {
   len = 365;
   songs;
   girls;
-  waitMins=0;
+  waitMins = "";
   // Our translated text strings
   private signupErrorString: string;
   constructor(public navCtrl: NavController, public user: User, public toastCtrl: ToastController,  private afDB: AngularFireDatabase, public translateService: TranslateService) {
@@ -189,12 +189,12 @@ calcu(arr){
       message: "Sent Succesfully",
       duration: 2000,
       position: 'top'
-    });
+    }); 
   }
 
   waitEmergency(){
     this.afDB.list('/WEmergency').remove();
-    if(this.waitMins == 0){
+    if(this.waitMins == ""){
       const toast = this.toastCtrl.create({
         message: "Not sent set minutes",
         duration: 2000,
